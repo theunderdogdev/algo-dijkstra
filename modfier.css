@@ -3,6 +3,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
 }
 div.wrapper{
   position: absolute;
@@ -19,14 +21,13 @@ div.wrapper{
 
 }
 
-.indicator{
+.input-menu{
    width: 100%;
    display: flex;
    align-items: center;
 }
 
 input.Togglers{
-    font-family: 'Monaco';
     font-size: medium;
     display: none;
     width: 180px;
@@ -54,8 +55,30 @@ input:focus::placeholder{
   position: absolute;
   right: 20px;
 }
+.btn{
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+}
+.btn:hover{
+  background-color: #0a58ca;
+}
+.show{
+  display: block;
+}
 
 #bstrap-a{
+  display: none;
+  background-color: rgba(236, 200, 38, 0.836);
   position: absolute;
+  text-align: center;
+  font-size: larger;
+  margin: 5px;
+  padding: 20px;
+  color: white;
   width: 400px;
 }
