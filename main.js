@@ -1,5 +1,5 @@
 if ($(window).width() < 800 || $(window).height() < 500) {
-  alert("Insufficient Window Width");
+  alert("Insufficient Window Size");
   $("body").css("display", "none");
 }
 let shortestDistanceNode = (distances, visited) => {
