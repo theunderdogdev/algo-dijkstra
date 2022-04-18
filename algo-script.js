@@ -68,8 +68,7 @@ let findShortestPath = (graph, startNode, endNode) => {
 	};
 	return results;
 };
-/*--------------------------------------- Defining the graph data structure
-																			   --------------------------------------*/
+/*--------------------------------------- Defining the graph data structure --------------------------------------*/
 class Graph {
 	constructor() {
 		this.nodes = new Map();
@@ -175,8 +174,10 @@ const PathFinder = {
 		}
 	},
 	adjustWindowDims() {
-		this.win_w = $(window).width() - 20;
-		this.win_h = $(window).height() - 100;
+		this.win_w = $(window).width() - 10;
+		this.win_h = $(window).height() - 10;
+		$(".p5Canvas").width(this.win_w);
+		$(".p5Canvas").height(this.win_h);
 	},
 	createCircles(separation = 50) {
 		this.adjustWindowDims();
@@ -312,30 +313,29 @@ $("#search").click(function () {
 	let start = $("#start").val();
 	let end = $("#end").val();
 	if (start == "") {
-		createAlert("Please provide start point!")
-	}
-	else if (end == "") {
-		createAlert("Please provide end point!")
+		createAlert("Please provide start point!");
+	} else if (end == "") {
+		createAlert("Please provide end point!");
 	} else {
 		start = start.replace(/\s+/g, "");
 		end = end.replace(/\s+/g, "");
 		PathFinder.finalPath = findShortestPath(PathFinder.newGraph, start, end);
 		PathFinder.drawPath();
 		if (PathFinder.finalPath.distance === "Infinity") {
-			createAlert("No path found")
+			createAlert("No path found");
 		}
-		$("#start").val("")
-		$("#end").val("")
+		$("#start").val("");
+		$("#end").val("");
 	}
 });
 const nav = $("nav.floating-nav");
 // tl.fromTo("nav.floating-nav", { x: "110%" }, { x: 0 });
 $("#nav-toggler").click(function (e) {
-		if (nav.hasClass('active')) {
-			nav.removeClass('active')
-			$(this).removeClass("active");
-		} else {
-			$(this).addClass("active");
-			nav.addClass('active')
-		}
+	if (nav.hasClass("active")) {
+		nav.removeClass("active");
+		$(this).removeClass("active");
+	} else {
+		$(this).addClass("active");
+		nav.addClass("active");
+	}
 });
