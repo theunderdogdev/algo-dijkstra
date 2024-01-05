@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | Shortest Path Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="modfier.css" />
+    <link rel="stylesheet" href="./lib/material.css" />
+  </head>
+
+  <body>
+    <div id="bstrap-a" role="alert"></div>
+    <button class="btn active" id="nav-toggler">
+      <span class="material-symbols-rounded"> switch_access_2 </span>
+    </button>
+    <nav class="floating-nav active">
+      <div class="entry-wrap">
+        <label class="alt-label" for="start">start</label>
+        <input
+          type="text"
+          class="entries"
+          oninput="this.value = this.value.toUpperCase()"
+          id="start"
+          maxlength="1"
+          autocomplete="off"
+        />
+      </div>
+      <div class="entry-wrap">
+        <label class="alt-label" for="end">end</label>
+        <input
+          type="text"
+          class="entries"
+          oninput="this.value = this.value.toUpperCase()"
+          id="end"
+          maxlength="1"
+          autocomplete="off"
+        />
+      </div>
+      <button class="btn" id="search">
+        <span class="material-symbols-rounded"> conversion_path </span>
+      </button>
+
+      <button class="btn" id="new">
+        <span class="material-symbols-rounded"> frame_reload </span>
+      </button>
+    </nav>
+
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/p5.min.js"></script>
+    <script src="main-oop.js"></script>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
