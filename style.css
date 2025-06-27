@@ -9,9 +9,9 @@
   font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 24;
   font-size: 25px;
 }
-canvas {
+/* canvas {
   border-radius: 20px;
-}
+} */
 input {
   border: 2px solid rgba(0, 0, 0, 0.125);
   outline: none;

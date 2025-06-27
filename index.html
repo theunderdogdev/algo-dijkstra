@@ -11,11 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="modfier.css" />
-    <link rel="stylesheet" href="./lib/material.css" />
+
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/p5.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="assets/material.css" />
   </head>
 
   <body>
+    <div id="app"></div>
     <div id="bstrap-a" role="alert"></div>
     <button class="btn active" id="nav-toggler">
       <span class="material-symbols-rounded"> switch_access_2 </span>
@@ -52,9 +56,6 @@
       </button>
     </nav>
 
-    <script src="./lib/jquery.min.js"></script>
-    <script src="./lib/p5.min.js"></script>
-    <script src="main-oop.js"></script>
-    <!-- <script src="main.js"></script> -->
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>

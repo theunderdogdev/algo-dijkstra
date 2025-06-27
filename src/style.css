@@ -1,0 +1,139 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+}
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 24;
+  font-size: 25px;
+}
+/* canvas {
+  border-radius: 20px;
+} */
+input {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  outline: none;
+  font-size: large;
+}
+.btn {
+  background-color: transparent;
+  color: #e2e8f0;
+  border: 1px solid #e2e8f0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+#nav-toggler {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+}
+#nav-toggler.active {
+  color: #34d399;
+  border-color: #34d399;
+}
+.floating-nav {
+  padding: 20px;
+  position: absolute;
+  top: 85px;
+  right: 25px;
+  width: 250px;
+  height: 300px;
+  background-color: transparent;
+  border: 2px solid white;
+  transform: translateX(120%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 2;
+  border-radius: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 3.7rem;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.floating-nav.active {
+  transform: translateX(0);
+}
+.entry-wrap{
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.alt-label{
+	position: absolute;
+	font-size: 12px;
+	color: #e2e8f0;
+	bottom: -1.4rem;
+}
+.entries {
+	margin-top: 1.5rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 0.125rem;
+  background-color: transparent;
+  color: #e2e8f0;
+  border: 1px solid #e2e8f0;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+.entries:focus {
+  border-color: #34d399;
+  color: #34d399;
+}
+#search {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+#search.routing{
+	animation: pulse 0.25s ease-in-out infinite alternate;
+}
+#new {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+#open {
+  position: absolute;
+  right: 20px;
+}
+
+.show {
+  display: block;
+}
+
+#bstrap-a {
+  display: none;
+  background-color: rgba(236, 200, 38, 0.836);
+  position: absolute;
+  text-align: center;
+  font-size: larger;
+  margin: 5px;
+  padding: 20px;
+  color: white;
+  width: 400px;
+  z-index: 2;
+}
+@keyframes pulse {
+	from{
+		color: #e2e8f0;
+		border-color: #e2e8f0;
+	}
+	to{
+		color: #34d399;
+		border-color: #34d399;
+	}
+}
