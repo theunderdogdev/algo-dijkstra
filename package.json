@@ -1,0 +1,11 @@
+{
+  "name": "algo-dijkstra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:theunderdogdev/algo-dijkstra.git",
+  "author": "ruturaj-kalshetti <ruturaj2404@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/p5": "^1.7.6"
+  }
+}
