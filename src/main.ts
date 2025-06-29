@@ -43,7 +43,7 @@ const setup = (p5: p5) => {
       // raise an alert and add invalid class
       return;
     }
-    const [_, start, , end] = match.map(v => v.toUpperCase());
+    const [_, start, , end] = match.map((v) => v.toUpperCase());
     if (start !== "" && end !== "" && start !== end) {
       const { circles, edges } = pathFinder.elements as Elements;
       console.log("search", start === "", end);
